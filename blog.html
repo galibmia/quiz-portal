@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-white font-common">
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+          <div class="text-zinc-800 font-bold uppercase">
+            <h1 class="text-lg">Galib <span class="text-green-700">Blog</span></h1>
+            <p class="text-[10px] font-normal capitalize -mt-1">
+              Get ready to Quiz and be amazed!
+            </p>
+          </div>
+          <a href="index.html"><button
+            class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+          >
+            Home
+          </button></a>
+        </nav>
+      </header>
+
+      <section class="bg-[#1D1D1D] text-gray-100 py-32 min-h-screen">
+        <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+          <h2 class="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">Frequently Asked Questions</h2>
+          <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What is the difference between Map vs Filter vs forEach in JS?</summary>
+              <div class="px-4 pb-4">
+                <p>`map`, `filter`, and `forEach` are all array methods in JavaScript used for different purposes: <br>
+
+                  <br> <b> 1. **forEach**:</b>
+                       <br>- Syntax: `array.forEach(callbackFunction(element, index, array))`
+                       <br>- Purpose: Executes a provided function once for each array element. It doesn't return a new array; it simply iterates over each element in the array and performs an action (usually a side effect).
+                      <br> - Use Case: Use `forEach` when you want to perform an operation on each element of the array without changing the original array or creating a new one.
+                    
+                    <br><br><b>2. **map**:</b>
+                      <br> - Syntax: `array.map(callbackFunction(element, index, array))`
+                       <br>- Purpose: Creates a new array populated with the results of calling a provided function on every element in the calling array.
+                       <br>- Use Case: Use `map` when you want to transform each element of an array into something else and return a new array with the transformed elements. It's particularly useful when you want to perform a one-to-one transformation.
+                    
+                   <br><br><b>3. **filter**:</b>
+                       <br>- Syntax: `array.filter(callbackFunction(element, index, array))`
+                      <br> - Purpose: Creates a new array with all elements that pass the test implemented by the provided function.
+                       <br>- Use Case: Use `filter` when you want to remove elements from an array based on a condition and return a new array containing only the elements that satisfy the condition. It's useful for filtering out unwanted elements from an array.
+                    
+                    <br><br><b>In summary:</b>
+                   <br> - `forEach` is for executing a function on each element of an array without creating a new array.
+                   <br> - `map` is for creating a new array by applying a function to each element of an existing array.
+                   <br> - `filter` is for creating a new array containing only the elements that pass a certain condition.
+                    
+                   <br><br>Each method serves a different purpose, so choose the one that best fits your specific use case.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What payment methods do you accept?</summary>
+              <div class="px-4 pb-4">
+                <p>We accept various payment methods, including credit cards, debit cards, net banking, and mobile wallet payments. You can choose the payment option that is most convenient for you during the checkout process.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">How long does shipping take?</summary>
+              <div class="px-4 pb-4">
+                <p>Shipping times may vary depending on your location and the shipping method chosen. Typically, orders are processed within 1-2 business days, and delivery can take 3-7 business days within India. You will receive a tracking notification once your order is shipped.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">Can I return a product if I'm not satisfied?</summary>
+              <div class="px-4 pb-4">
+                <p>Yes, we have a hassle-free return policy. If you are not satisfied with your purchase, you can initiate a return within 30 days of receiving the product. Please contact our customer support at <a href="" class="underline">example@gmail.com</a> for assistance.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">Do you offer international shipping?</summary>
+              <div class="px-4 pb-4">
+                <p>Currently, we only provide shipping services within India. However, we may consider expanding our shipping options to international locations in the future. Please stay updated with our website for any changes in shipping destinations.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What is your customer support contact?</summary>
+              <div class="px-4 pb-4">
+                <p>If you have any questions, concerns, or need assistance, you can reach our customer support team at 9911083755 during our business hours, Monday to Saturday from 10 am to 6 pm. You can also contact us via email at <a href="" class="underline">example@gmail.com</a>.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What are your terms and conditions?</summary>
+              <div class="px-4 pb-4">
+                <p>You can find our detailed terms and conditions by visiting our 
+                  <a href="" class="underline">Terms of Service</a> 
+                  page on our website. It includes information about our policies, user guidelines, and more.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      
+    
+</body>
+</html>
